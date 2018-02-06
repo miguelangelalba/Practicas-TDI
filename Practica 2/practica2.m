@@ -157,14 +157,13 @@ imshow(coins_b_w_mediana);
 clear all;
 close all;
 coins = imread('coins.png');
-coins = double(coins);
 
-I_median = medfilt2(coins,[11 11],'symmetric');
+I_median = medfilt2(coins,[5 5],'symmetric');
 I_BW = im2bw(I_median,100/255);
 h = -ones(3,3);
 h(2,2) = 8;
+
 I_BW_realce = imfilter(I_BW,h,'symmetric');
-I_BW_realce = uint8(I_BW_realce);
 figure
 imshow(I_BW_realce);
 
