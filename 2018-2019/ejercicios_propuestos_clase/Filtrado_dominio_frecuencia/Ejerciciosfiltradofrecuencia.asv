@@ -1,0 +1,17 @@
+%% Ejercicios propuestos en clase
+%%Ejercicio1
+clear all, close all, clc
+lista = dir('*PNG');
+imagenes = [];
+FFT_images = [];
+modulo_FFT = [];
+for i= 1:6
+    %imagenes(i) = imread('Ejercicio'+ i +'.PNG');
+    imagenes{i} = imread(lista(i).name);
+    figure(i), imshow(imagenes{i});
+    m = size(imagenes{iç,1);
+    n = size(imagenes(i),2)
+    FFT_images{i} = fftshift(fft2(double(imagenes{i}),m,n));
+    modulo_FFT{i} = abs(FFT_images{i});
+    figure(i+1), imshow(modulo_FFT{i}, []), title('MODULO DE X_FFT' + i);
+end 
