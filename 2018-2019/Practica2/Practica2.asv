@@ -145,7 +145,7 @@ I_coins_rgb(:,:,3) = coins;
 
 I_final = imadd(I_bw_rgb,I_coins_rgb);
 %Paleta_color = [0,0,0;255,0,0]; %Esto no vale ya que luego a la hora de
-%hacer  la suma de imágenes tendremos problemas.
+%hacer  la suma de imágenes tendremos pro
 %I_color = uint8(ind2rgb(I_BW_realce,Paleta_color));
 
 %I_coins_color = ind2rgb(coins);
