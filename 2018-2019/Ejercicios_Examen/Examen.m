@@ -63,4 +63,20 @@ figure,
 
 %viendo los dibujos no sabría interpretarlos.....
 
-%%
+%% Cuestion 3 (Contestada en las hojas)
+%% Cuestión 4 
+%Con uint8 podemos representar valores enteros, en el caso de una image de
+%grises podremos representar distintos niveles de intensidad en un rando de
+%0-255 distribuidos en plannos de bit. Cada plano de bit tendrá un número
+%binario.
+%Cada pixel corresponde a un valor de bit por lo que en cada plan0o de bit
+%tendremos 30x30 píxeles con un valor de bit asociado a cada pixel en los distintos planos. 
+
+%Los planos de bit van del 7-0 siendo el 7 el plano con el bit mas significativo y el 0 el menos.
+%Si solo tenemos la posibilidad de reconstruir la imagen con la mitad de
+%los planos, nos quedaríamos con los planos de bit mas significativos ya que
+%serán los que más infomración tengan de la imagen, es decir del 7-3
+
+%% Cuestión 5
+
+
