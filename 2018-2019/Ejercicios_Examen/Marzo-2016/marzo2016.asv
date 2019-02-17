@@ -1,0 +1,15 @@
+% Examen 17 Marzo 2016
+
+%Por ejemplo, dos modelos de color
+%RGB --> geometricamente se representa como un cubo. Este modelo es un
+%modelo lineal, en el que en la diagonal desde el origen al otro extremo se
+%encunetra la escala de grises.
+%HSI --> se trada de un modelo de color no lineal en forma de cono , el
+%ángulo de la base del cono (H) nos indica el color(tono), la s nos indica la saturazión
+% y la I el nivel de intensidad.
+% RGB --> aditivo Impresoras
+% RGB --> Sustractivo Fotografía?
+% YUV --> televisión
+% HSI --> Procesamiento de la imagen
+
+%% v
