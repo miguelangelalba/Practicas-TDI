@@ -11,12 +11,12 @@ for i= 1:6
     n = size(imagenes{i},2)
     FFT_images{i} = fftshift(fft2(double(imagenes{i}),m,n));
     modulo_FFT{i} = abs(FFT_images{i});
-    % for j=1:m
-     %   modulo_FF_contraste{i}(j,:)= log(1 + abs(modulo_FFT{i}(j,:))); %% Paso a logratimo para ver mejor
-    %end;
+     for j=1:m
+        modulo_FF_contraste{i}(j,:)= log(1 + abs(modulo_FFT{i}(j,:))); %% Paso a logratimo para ver mejor
+    end;
     figure,
     subplot(2,1,1), imshow(imagenes{i}),title("Imagen Ejercicio "+i);
-    subplot(2,1,2), imshow(modulo_FFT{i}, []), title("Módulo FFT de Ejercicio "+i);
+    subplot(2,1,2), imshow(modulo_FF_contraste{i}, []), title("Módulo FFT de Ejercicio "+i);
 end 
 
 
