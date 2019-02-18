@@ -23,6 +23,7 @@ figure,mesh(Modulo_I);
 %módulo de la DFT pero el cambio de escala si que afecta, en este caso al
 %tener una escala más pequeña predominarán las componentes en alta
 %frecuencia.
+%Energía mas dispersa por eso se expande en la trnasformación logarítmica
 clear all, close all, clc
 
 
@@ -65,6 +66,7 @@ figure,
 
 %% Cuestion 3 (Contestada en las hojas)
 %% Cuestión 4 
+%%Tengo 8 imágenes binarias del mismo tamaño.
 %Con uint8 podemos representar valores enteros, en el caso de una image de
 %grises podremos representar distintos niveles de intensidad en un rando de
 %0-255 distribuidos en plannos de bit. Cada plano de bit tendrá un número
@@ -79,4 +81,6 @@ figure,
 
 %% Cuestión 5
 
-
+%%h = fspecial('average',hsize) returns an averaging filter h of size hsize.
+% El negativo es la pendiente unidad, no aumenta el contraste mantiene la
+% diferencia.
