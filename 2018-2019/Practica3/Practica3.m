@@ -196,5 +196,7 @@ subplot(2,2,2), imshow(Filtrada_espacio, [])
 subplot(2,2,3), imshow(FFT_modulo_Triangulo, [])%ahora sí
 subplot(2,2,4), imshow(FiltroA1, [])%No entiendo, por qué nos estamos quedando con los contornos?
 %% No veo el problema
+%Filtro paso alto es deribador por lo que tendremos contornos como
+%resultado de esta operación.
 
 %%
