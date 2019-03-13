@@ -22,7 +22,7 @@ subplot(4,1,4), imhist(I_salt_pepper),axis('auto');
 
 %% Filtrado
 
-h = 1/25*ones(5,5);
+h = 1/25*ones(5,5); %Filtro de media
 h_grande = (1/(35*35))*ones(35/35);
 
 I_gauss_suav = imfilter(I_gaussian,h);

@@ -66,6 +66,5 @@ clear all, close all, clc
 % el negro de la partitura es decir haría su negativo posteriormente
 % calculadría su proyección horizontal  y considerando que coincide el
 % comenzo de la imagen con el coinezo y fin de la partitura tendría que
-% coincidir en nº de píxeles con la longitud horizonal de la imagen y esto
-% tendría que coincidir 5 veces al tratarse de un pentagrama.
+% coincidir en nº de píxeles con la longitud horizonal 
 
