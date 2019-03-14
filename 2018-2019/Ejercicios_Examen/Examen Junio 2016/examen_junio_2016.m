@@ -6,7 +6,7 @@ clear all, close all, clc
 %a la hora de crear la mascara del filtro se tendrá que escoger uno que sea
 %lo sfucientemente grande como para poder difumiar las lineas pero lo
 %suficientemente pequelño como para que no afecte a las que queramos
-%conservar.
+%conservar. y el centro en el medio
 %Puesto qeu lo que estamos haiendo es eliminar un "contorno" se elige este
 %tipo de filtro en vez del de mediana.
 
@@ -33,19 +33,21 @@ imtool(I3_bw);
 % a) Es un procedimiento robusto a oclusiones de los elementos a detectar
 % Verdadero, en caso de tener huecos es capaz de identificar la geometría
 % del elemento (Aunque no sé si se refiere a esto la verdad...) pero hay
-% que tener cuidado con los enmascaramientos.
+% que tener cuidado con los enmascaramientos. Permite detectar
+% alineamientos
 
 % b)El tamaño óptimo de la matriz acumuladora  (dimensiones del espacio de Hough)
 % se ob-tiene conforme a una expresión que sólo depende del tamaño de la imagen.
 
 %FALSO! Depende del número de parámetros desconocidos del problema, en caso
 %de una recta serán 2 pero por ejemplo un plano seran 3
-%Depende del tamaño, el ángulo (y las dimensiones?)
+%Depende del tamaño, resolución del ángulo 
+%(y las dimensiones en este caso no ya que una imagen es de dos dimensiones )
 
 % C)Es posible que algunos máximos del espacio de Hough no correspondan con 
 %las formas geométricas que se desean detectar en la imagen.
 
 %Verdadero, puede darse el caso de tener sobresegmentaciones en imagenes
 %con mucho brillo lsa cuales enmascaran la forma geométrica que se quiera
-%detectar
+%detectar (No todos los máximos corresponden al espacio transformado)
 

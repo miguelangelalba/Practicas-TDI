@@ -209,5 +209,5 @@ cormoran_segm = label2rgb(pixel_label_abe_norm_descriptor_S);
 figure, imshow(cormoran_segm);
 
 %En general mejor los esquemas supervisados que los no supervisados
-%Normalizar características no etiquetas
+
 
