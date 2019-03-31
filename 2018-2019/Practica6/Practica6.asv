@@ -103,23 +103,14 @@ end
 figure, imshow(I_morf)
 
 %% Delimitación de las fronteras
-close all
-
 
 %Puedo hacer la dilatación y la erosión y hacer la resta entre amabas
-EE_cuadrado_final = strel('square',3);
-Negativo = 255 - I_cierre;
+EE_cuadrado_final = strel('square',10);
 
-I_erosion_final = imerode(Negativo,EE_cuadrado_final);
-I_dilatacion_final = imdilate(Negativo,EE_cuadrado_final);
+I_erosion_final = imerode(componente_filtrada,EE_cuadrado_final);
+I_dilatacion_final = imdilate(componente_filtrada,EE_cuadrado_final);
 
-I_final = I_dilatacion_final -I_erosion_final;
-
-figure, imshow(I_erosion_final),title("Imagen erosionada");
-figure, imshow(I_dilatacion_final),title("Imagen dilatada");
-figure, imshow(I_final),title("Contornos");
-
-
+I_final = I_dilatacion_final -
 
 
 
