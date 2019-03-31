@@ -1,11 +1,18 @@
 % Examen 17 Marzo 2016
 
 %Por ejemplo, dos modelos de color
+%Desde un punto de vista geométrico un modelo de color es una forma
+%estándaraizada de repsentar distintas tonalidades e intensidades.
+%Existen diferentes modelos de color ya que según el uso ejemplo gardware o
+%software será mas recomendable uno u otro.
+
+%Dependeiendo del modelo de color se representa de una manera u otra:
 %RGB --> geometricamente se representa como un cubo. Este modelo es un
 %modelo lineal, en el que en la diagonal desde el origen al otro extremo se
 %encunetra la escala de grises.
 %HSI --> se trada de un modelo de color no lineal en forma de cono , el
 %ángulo de la base del cono (H) nos indica el color(tono), la s nos indica la saturazión
+%LAb --> modelo de color representado mediante una esfera.
 % y la I el nivel de intensidad.
 % RGB --> aditivo Impresoras
 % RGB --> Sustractivo Fotografía?
